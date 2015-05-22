@@ -29,7 +29,7 @@ Good luck!
 
 """
 
-test_string = "Magnets, how do they work"
+
 
 def count_unique(string1):
     """Count unique words in a string.
@@ -58,9 +58,7 @@ def count_unique(string1):
 
     """
 
-    test_list = []
     test_dict = {}
-
     test_list = string1.split(" ")
 
     for item in test_list:
@@ -73,7 +71,7 @@ def count_unique(string1):
 def common_items(list1, list2):
     """Produce the set of common items in two lists.
 
-    Given two lists, return a list of the common items shared between 
+    Given two lists, return a list of the common items shared between
     the lists.
 
     IMPORTANT: you may not use 'if ___ in ___' or the method 'index'.
@@ -146,18 +144,6 @@ def unique_common_items(list1, list2):
 
     return final_list
 
-#     # new_list = list1 + list2
-#     # new_dict = {}
-#     # final_list = []
-
-#     # for item in new_list:
-#     #     new_dict[item] = new_list.count(item)
-
-#     # for key, value in new_dict.items():
-#     #     if value > 1:
-#     #         final_list.append(key)
-
-#     # return sorted(final_list)
 
 
 def sum_zero(list1):
@@ -200,20 +186,7 @@ def sum_zero(list1):
             final_list.append(sorted([key, negative_key]))
 
     return final_list
-#     # new_dict = {}
-#     # final_list = []
 
-#     # for number in list1:
-#     #     new_dict.setdefault(number, None)
-
-#     # for key in new_dict.keys():
-#     #     negative_key = (key * -1)
-#     #     if sorted([key, negative_key]) in final_list:
-#     #         pass
-#     #     elif negative_key in new_dict:
-#     #         if key + negative_key == 0:
-#     #             final_list.append(sorted([key, negative_key]))
-#     # return sorted(final_list)
 
 
 def find_duplicates(words):
@@ -226,12 +199,12 @@ def find_duplicates(words):
         ['a', 'is', 'rose']
 
     You should treat differently-capitalized words as different:
-    """
-    #     >>> sorted(find_duplicates(
-    #     ...     ["Rose", "is", "a", "rose", "is", "a", "rose"]))
-    #     ['Rose', 'a', 'is', 'rose']
+   
+        >>> sorted(find_duplicates(
+        ...     ["Rose", "is", "a", "rose", "is", "a", "rose"]))
+        ['Rose', 'a', 'is', 'rose']
 
-    # """
+    """
 
     words = ["rose", "is", "a", "rose", "is", "a", "rose"]
     words_dict = {}
@@ -343,11 +316,11 @@ def sort_pairs(l):
     # Print sorted list of pairs where the pairs are sorted. This is used only
     # for documenttion tests. You can ignore it.
     return sorted(sorted(pair) for pair in l)
- 
+
 
 if __name__ == "__main__":
     print
     import doctest
     if doctest.testmod().failed == 0:
-        print "** ALL TESTS PASSED. GOOD WORK!" 
+        print "** ALL TESTS PASSED. GOOD WORK!"
     print
