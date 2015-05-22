@@ -58,7 +58,6 @@ def count_unique(string1):
 
     """
 
-    
     test_list = []
     test_dict = {}
 
@@ -68,15 +67,6 @@ def count_unique(string1):
         test_dict[item] = test_list.count(item)
 
     return test_dict
-
-
-    # list_of_words = string1.split()
-    # word_count_dict = {}
-
-    # for item in list_of_words:
-    #     word_count_dict[item] = list_of_words.count(item)
-
-    # return word_count_dict
 
 
 
@@ -256,89 +246,89 @@ def find_duplicates(words):
     return dupe_words
 
 
-# def word_length(words):
-#     """Given list of words, return list of ascending [(len, [words])].
+def word_length(words):
+    """Given list of words, return list of ascending [(len, [words])].
 
-#     Given a list of words, return a list of tuples, ordered by word-length.
-#     Each tuple should have two items--the length of the words for that 
-#     word-length, and the list of words of that word length.
+    Given a list of words, return a list of tuples, ordered by word-length.
+    Each tuple should have two items--the length of the words for that 
+    word-length, and the list of words of that word length.
 
-#     For example:
+    For example:
 
-#         >>> word_length(["ok", "an", "apple", "a", "day"])
-#         [(1, ['a']), (2, ['ok', 'an']), (3, ['day']), (5, ['apple'])]
+        >>> word_length(["ok", "an", "apple", "a", "day"])
+        [(1, ['a']), (2, ['ok', 'an']), (3, ['day']), (5, ['apple'])]
 
-#     """
+    """
 
-#     return []
-
-
-# def adv_word_length_sorted_words(words):
-#     """Given list of words, return list of ascending [(len, [sorted-words])].
-
-#     Given a list of words, return a list of tuples, ordered by word-length.
-#     Each tuple should have two items--the length of the words for that 
-#     word-length, and the list of words of that word length. The list of words
-#     for that length should be sorted alphabetically.
-
-#     For example:
-
-#         >>> adv_word_length_sorted_words(["ok", "an", "apple", "a", "day"])
-#         [(1, ['a']), (2, ['an', 'ok']), (3, ['day']), (5, ['apple'])]
-
-#     """
-
-#     return []
+    return []
 
 
-# def pirate_talk(phrase):
-#     """Translate phrase to pirate talk.
+def adv_word_length_sorted_words(words):
+    """Given list of words, return list of ascending [(len, [sorted-words])].
 
-#     Given a phrase, translate each word to the Pirate-speak equivalent.
-#     Words that cannot be translated into Pirate-speak should pass through
-#     unchanged. Return the resulting sentence.
+    Given a list of words, return a list of tuples, ordered by word-length.
+    Each tuple should have two items--the length of the words for that 
+    word-length, and the list of words of that word length. The list of words
+    for that length should be sorted alphabetically.
+
+    For example:
+
+        >>> adv_word_length_sorted_words(["ok", "an", "apple", "a", "day"])
+        [(1, ['a']), (2, ['an', 'ok']), (3, ['day']), (5, ['apple'])]
+
+    """
+
+    return []
+
+
+def pirate_talk(phrase):
+    """Translate phrase to pirate talk.
+
+    Given a phrase, translate each word to the Pirate-speak equivalent.
+    Words that cannot be translated into Pirate-speak should pass through
+    unchanged. Return the resulting sentence.
    
-#     Here's a table of English to Pirate translations:
+    Here's a table of English to Pirate translations:
 
-#     English     Pirate
-#     ----------  ----------------
-#     sir         matey
-#     hotel       fleabag inn
-#     student     swabbie
-#     boy         matey
-#     madam       proud beauty
-#     professor   foul blaggart
-#     restaurant  galley
-#     your        yer
-#     excuse      arr
-#     students    swabbies
-#     are         be
-#     lawyer      foul blaggart
-#     the         th'
-#     restroom    head
-#     my          me
-#     hello       avast
-#     is          be
-#     man         matey
+    English     Pirate
+    ----------  ----------------
+    sir         matey
+    hotel       fleabag inn
+    student     swabbie
+    boy         matey
+    madam       proud beauty
+    professor   foul blaggart
+    restaurant  galley
+    your        yer
+    excuse      arr
+    students    swabbies
+    are         be
+    lawyer      foul blaggart
+    the         th'
+    restroom    head
+    my          me
+    hello       avast
+    is          be
+    man         matey
 
-#     For example:
+    For example:
 
-#         >>> pirate_talk("my student is not a man")
-#         'me swabbie be not a matey'
+        >>> pirate_talk("my student is not a man")
+        'me swabbie be not a matey'
 
-#     You should treat words with punctuation as if they were different
-#     words:
+    You should treat words with punctuation as if they were different
+    words:
 
-#         >>> pirate_talk("my student is not a man!")
-#         'me swabbie be not a man!'
+        >>> pirate_talk("my student is not a man!")
+        'me swabbie be not a man!'
 
-#     """
+    """
 
-#     return ""
+    return ""
 
 
-#############################################################################
-#END OF SKILLS TEST; YOU CAN STOP HERE.
+############################################################################
+# END OF SKILLS TEST; YOU CAN STOP HERE.
 
 
 def print_dict(d):
